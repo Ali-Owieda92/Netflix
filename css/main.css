@@ -1,0 +1,401 @@
+.landing-page{
+    height: 100vh;
+    position: relative;
+    background-image: url("/imgs/background.jpeg");
+    background-size: cover;
+}
+.landing-page::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+}
+/* Start Nav  */
+.navbar-brand{
+    color: #F00;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin: 0;
+}
+.navbar-brand:hover{
+    color: #F00 !important;
+}
+.language{
+    margin-right: 20px;
+    padding: 3px 10px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+}
+.language .lang{
+    border: none;
+    background-color: transparent;
+    color: #FFF;
+    padding-bottom: 4px;
+    margin-left: 5px;
+    outline: none;
+    cursor: pointer;
+}
+.lang option{
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+}
+.sign{
+    background-color: #F00;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+}
+/* End Nav  */
+/* Start Main  */
+.main{
+    position: absolute;
+    color: #FFF;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.getstarted{
+    display: flex;
+    align-items: center;
+}
+.getstarted .input{
+    position: relative;
+    margin-right: 20px;
+}
+.getstarted .input input{
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    padding: 16px;
+    width: 400px;
+    background-color: #00000026;
+    color: #FFF;
+    font-size: 20px;
+}
+.getstarted .input label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #CCC;
+}
+.getstarted .input input:focus + label{
+    top: 10px;
+}
+.getstarted button{
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F00;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* End Main  */
+/* Sign Page  */
+.sign-page{
+    height: 100vh;
+    background-color: #000000d9;
+    position: relative;
+}
+.sign-page .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+.sign-page .container form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sign-page .container form h1{
+    color: #FFF;
+    margin-bottom: 50px;
+}
+.sign-page .container form input{
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    background-color: #00000026;
+    color: #FFF;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.sign-page .container form input::placeholder{
+    color: #FFF;
+}
+.sign-page .container form button{
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #F00;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 400px;
+}
+.sign-page .container .or{
+    color: #FFF;
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 70px;
+}
+.sign-page .container .btns{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 10px;
+}
+.sign-page .container .btns button:first-of-type{
+    border: none;
+    padding: 10px;
+    background-color: #0000004a;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.sign-page .container .btns .forgot{
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    font-size: 18px;
+}
+.sign-page .container .form{
+    color: #FFF;
+    margin: 5px 0;
+}
+.sign-page .container .new{
+    border: none;
+    background-color: transparent;
+    color: #ffffffa1;
+}
+.sign-page .container .new span{
+    color: #FFF;
+}
+/* Sign Page  */
+/* TV Section  */
+.tv{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #FFF;
+    border-top: 10px solid #CCC;
+    border-bottom: 10px solid #CCC;
+}
+.tv .text{
+    padding: 20px;
+    width: 50%;
+}
+.tv .text h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.tv .text p{
+    font-size: 20px;
+}
+.tv .img{
+    width: 50%;
+}
+.tv .img img{
+    width: 100%;
+}
+/* TV Section  */
+/* Downlaod Section  */
+.download{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #FFF;
+    border-top: 10px solid #CCC;
+    border-bottom: 10px solid #CCC;
+}
+.download .img{
+    width: 50%;
+    position: relative;
+}
+.download .img img{
+    width: 100%;
+}
+.download .img .box {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    position: absolute;
+    top: 78%;
+    left: 24%;
+    background-color: #000;
+    border: 1px solid #FFF;
+    padding: 10px;
+    border-radius: 11px;
+}
+.download .img .box img{
+    width: 60px;
+}
+.download .img .box .text{
+    margin-left: 20px;
+}
+.download .img .box .text h5{
+    margin: 0;
+}
+.download .img .box span{
+    color: #00F;
+}
+.download .text{
+    width: 50%;
+}
+.download .text h1{
+    font-weight: bold;
+}
+.download .text p{
+    font-size: 20px;
+    width: 450px;
+}
+/* Downlaod Section  */
+/* Watch Section  */
+.watch{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #FFF;
+    border-top: 10px solid #CCC;
+    border-bottom: 10px solid #CCC;
+}
+.watch .text{
+    width: 50%;
+}
+.watch .text h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.watch .text p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.watch .img{
+    width: 50%;
+}
+.watch .img img{
+    width: 100%;
+}
+/* Watch Section  */
+/* Kids Section  */
+.kids{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #FFF;
+    border-top: 10px solid #CCC;
+    border-bottom: 10px solid #CCC;
+}
+.kids .img{
+    width: 50%;
+}
+.kids .img img{
+    width: 100%;
+}
+.kids .text{
+    width: 50%;
+}
+.kids .text h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.kids .text p{
+    font-size: 20px;
+    font-weight: 500;
+}
+/* Kids Section  */
+/* Questions Section  */
+.questions{
+    padding: 50px;
+    background-color: #000;
+    color: #FFF;
+    border-top: 10px solid #CCC;
+    border-bottom: 10px solid #CCC;
+    text-align: center;
+}
+.questions h1{
+    margin-bottom: 20px;
+}
+.questions div{
+    display: flex;
+    flex-direction: column;
+}
+.questions div .btn .button{
+    background-color: #cccccc3d;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.questions div .btn .button:hover{
+    background-color: #cccccc66;
+}
+.questions div .btn .button button{
+    border: none;
+    background-color: transparent;
+    color: #FFF;
+    font-size: 25px;
+}
+.questions div .btn .button .fa-plus{
+    color: #FFF;
+    font-size: 35px;
+}
+.questions div .btn .visible{
+    padding: 20px;
+    background-color: #cccccc3d;
+    margin-top: 4px;
+    color: #FFF;
+    font-size: 20px;
+    text-align: left;
+    border-radius: 5px;
+    display: none;
+}
+/* Questions Section  */
+/* Footer  */
+footer{
+    padding: 50px 20px;
+    background-color: #000;
+    color: #FFF;
+    border-top: 10px solid #CCC;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .container .col ul a{
+    display: block;
+    padding: 10px 0;
+    color: #CCC;
+}
+/* Footer  */
